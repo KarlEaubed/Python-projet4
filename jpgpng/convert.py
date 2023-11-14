@@ -28,3 +28,11 @@ def jpg_to_png(input_path, output_path):
     write_file(output_path, jpg_data)
 
     print(f"Conversion réussie : {input_path} -> {output_path}")
+
+def png_to_jpg(input_path, output_path):
+    png_data = read_file(input_path)
+
+    # Enregistrez les données au format JPG
+    write_file(output_path, png_data)
+
+    print(f"Conversion réussie : {input_path} -> {output_path}")
